@@ -1,0 +1,27 @@
+<div class="transition-box" key="holsten">
+   <h1>{{$t('Holsten.label.main', { beer: beer })}}</h1>
+   <h2>{{$t('Holsten.label.pros')}}</h2>
+   <ol>
+      <li v-for="pro in pros">
+         <span><strong>{{pro.text | capitalize}}: </strong></span>
+         <span>{{pro.value}}</span>
+      </li>
+      <span v-if="pros.length === 0">
+         <i>{{$t('Holsten.label.emptyCons')}}</i>
+      </span>
+   </ol>
+   <h2>{{$t('Holsten.label.cons')}}</h2>
+   <ol>
+      <li v-for="con in cons">
+         <span><strong>{{con.text | capitalize}}: </strong></span>
+         <span>{{con.value}}</span>
+      </li>
+   </ol>
+      <span v-if="cons.length === 0">
+         <i>{{$t('Holsten.label.emptyCons')}}</i>
+      </span>
+   <div>
+      <h2>{{$t('Holsten.label.total')}}</h2>
+      <p>{{overall}}</p>
+   </div>
+</div>

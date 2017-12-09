@@ -1,0 +1,27 @@
+<div class="transition-box" key="staropramen">
+    <h1>{{$t('Staropramen.label.main', { beer: beer })}}</h1>
+    <h2>{{$t('Staropramen.label.pros')}}</h2>
+    <ol>
+       <li v-for="pro in pros">
+          <span><strong>{{pro.text | capitalize}}: </strong></span>
+          <span>{{pro.value}}</span>
+       </li>
+       <span v-if="pros.length === 0">
+          <i>{{$t('Staropramen.label.emptyCons')}}</i>
+       </span>
+    </ol>
+    <h2>{{$t('Staropramen.label.cons')}}</h2>
+    <ol>
+       <li v-for="con in cons">
+          <span><strong>{{con.text | capitalize}}: </strong></span>
+          <span>{{con.value}}</span>
+       </li>
+    </ol>
+       <span v-if="cons.length === 0">
+          <i>{{$t('Staropramen.label.emptyCons')}}</i>
+       </span>
+    <div>
+       <h2>{{$t('Staropramen.label.total')}}</h2>
+       <p>{{overall}}</p>
+    </div>
+ </div>

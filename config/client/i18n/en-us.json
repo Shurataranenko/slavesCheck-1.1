@@ -1,0 +1,29 @@
+{
+   "Crusovice": {
+      "label": {
+         "main": "Here is a {beer} template",
+         "pros": "Pros:",
+         "cons": "Cons:",
+         "total": "Total:",
+         "emptyCons": "There are no cons"
+      }
+   },
+   "Holsten": {
+      "label": {
+         "main": "Here is a {beer} template",
+         "pros": "Pros:",
+         "cons": "Cons:",
+         "total": "Total:",
+         "emptyCons": "There are no cons"
+      }
+   },
+   "Staropramen": {
+    "label": {
+       "main": "Here is a {beer} template",
+       "pros": "Pros:",
+       "cons": "Cons:",
+       "total": "Total:",
+       "emptyCons": "There are no cons"
+    }
+  }
+}
